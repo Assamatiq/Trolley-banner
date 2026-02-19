@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background: #FFF5EB;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #FF8200;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%; /* circular logo */
+    object-fit: cover;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+/* Large Preview */
+#previewContainer {
+    margin-bottom: 20px;
+}
+
+#largePreview {
+    width: 800px;
+    height: 419px; /* 1200x628 ratio */
+    border: 5px solid #FF8200;
+    border-radius: 10px;
+}
+
+/* Small banner thumbnails */
+#bannerContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.banner-thumb {
+    width: 150px;
+    height: 79px; /* maintain 1200x628 ratio */
+    border: 3px solid #FF8200;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.banner-thumb:hover {
+    transform: scale(1.05);
+    border-color: #EF7D00;
+}
+
+/* Highlight selected thumbnail */
+.banner-thumb.selected {
+    border: 5px solid #EF7D00;
+}
+
+/* Canvas hidden */
+canvas {
+    display: none;
+}
+
+/* Inputs and Buttons */
+input, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #FF8200;
+}
+
+button {
+    background-color: #FF8200;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #EF7D00;
+}
+
+/* Footer */
+footer {
+    background-color: #FF8200;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}

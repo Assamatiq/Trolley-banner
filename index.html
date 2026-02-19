@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trolley </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Company Header -->
+    <header>
+        <img src="logo.png" alt="Company Logo" class="logo">
+        <h1>Sir Tell Me</h1>
+    </header>
+
+    <main>
+        <h2>Sir Here Also</h2>
+
+        <!-- Large Banner Preview -->
+        <div id="previewContainer">
+            <img id="largePreview" src="banner1.jpg" alt="Banner Preview">
+        </div>
+
+        <!-- Small Thumbnails -->
+        <div id="bannerContainer">
+            <img src="banner1.jpg" class="banner-thumb selected" onclick="selectBanner(this, 'banner1.jpg')" alt="Banner 1">
+            <img src="banner2.jpg" class="banner-thumb" onclick="selectBanner(this, 'banner2.jpg')" alt="Banner 2">
+            <img src="banner3.jpg" class="banner-thumb" onclick="selectBanner(this, 'banner3.jpg')" alt="Banner 3">
+        </div>
+
+        <!-- User Name Input -->
+        <input type="text" id="username" placeholder="Enter Your Name">
+
+        <!-- Buttons -->
+        <button onclick="generateBanner()">Generate</button>
+        <button onclick="downloadBanner()">Download</button>
+
+        <!-- Hidden Canvas -->
+        <canvas id="bannerCanvas" width="1200" height="628"></canvas>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trolley. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
